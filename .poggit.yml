@@ -5,4 +5,5 @@ branches:
 projects:
   SmartRollback:
     path: ""
+    icon: "icon.png"
 ...
