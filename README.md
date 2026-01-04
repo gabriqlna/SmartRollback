@@ -1,6 +1,7 @@
 <p align="center">
   <img src="icon.png" width="128" alt="SmartRollback Icon">
 </p>
+
 # 🛡️ SmartRollback
 
 **SmartRollback** é uma solução utilitária de alta performance para PocketMine-MP (API 5.x) desenvolvida para servidores Survival/SMP. Ele permite que administradores monitorem ações e revertam danos (griefing ou roubos) de forma precisa e assíncrona, garantindo a estabilidade do TPS.
