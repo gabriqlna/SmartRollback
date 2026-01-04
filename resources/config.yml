@@ -1,0 +1,17 @@
+# Configurações do Banco de Dados (SQLite)
+database:
+  filename: "smart_rollback.sqlite"
+  # Tempo de vida dos logs em dias. Logs mais antigos serão deletados na inicialização.
+  ttl-days: 7
+
+performance:
+  # Quantos eventos guardar na memória antes de escrever no disco (Batching)
+  write-batch-size: 50
+  # Tempo máximo em ticks para forçar a escrita (mesmo sem atingir o batch size)
+  flush-interval: 120
+  # Quantos blocos restaurar por tick durante um rollback (evita lag visual/TPS)
+  rollback-speed: 100
+
+limits:
+  # Raio máximo para rollback de área
+  max-radius: 50

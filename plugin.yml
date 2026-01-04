@@ -1,0 +1,14 @@
+name: SmartRollback
+version: 1.0.0
+main: SmartRollback\Main
+api: 5.0.0
+author: gabrielqlna
+permissions:
+  smartrollback.admin:
+    default: op
+    description: "Permite usar comandos de rollback"
+commands:
+  rb:
+    description: "Comando principal de Rollback"
+    permission: smartrollback.admin
+    usage: "/rb <player|area|undo> [params]"
