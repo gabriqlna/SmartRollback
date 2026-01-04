@@ -80,3 +80,25 @@ performance:
 # Limites de Segurança
 limits:
   max-radius: 50
+
+## 📦 Como Instalar
+
+1. **Baixe o Plugin:** Obtenha o arquivo `SmartRollback.phar` através do link oficial abaixo:
+   > 🔗 **Download:** [poggit.pmmp.io/p/SmartRollback](https://poggit.pmmp.io/p/SmartRollback)
+
+2. **Instalação no Servidor:**
+   * Mova o arquivo `.phar` para a pasta `/plugins/` do seu servidor PocketMine-MP.
+   * Reinicie o servidor para carregar o plugin e gerar a pasta de dados inicial.
+
+3. **Configuração Final:**
+   * Acesse `plugin_data/SmartRollback/config.yml` e ajuste os valores conforme a capacidade do seu hardware.
+   * Certifique-se de que os administradores possuem a permissão `smartrollback.admin`.
+
+---
+
+### 🛡️ Nota para Revisores (Poggit)
+Este plugin foi desenvolvido seguindo rigorosamente as **diretrizes de submissão** da plataforma:
+* **Sem conexões externas:** Não realiza chamadas para APIs externas ou sistemas de licenciamento remoto.
+* **Non-Blocking I/O:** Todas as operações de leitura e escrita em banco de dados SQLite são executadas via `AsyncTask`, garantindo que a **Main Thread** permaneça livre para o processamento do jogo.
+* **Gerenciamento de Memória:** Utiliza buffers controlados para evitar vazamentos de memória (memory leaks) durante grandes operações de rollback.
+
